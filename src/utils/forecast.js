@@ -9,7 +9,7 @@ const forecast = (lat, long, callback) => {
         
         
         } else {
-            const message = `${body.current.weather_descriptions[0]} It is currently ${body.current.temperature} fernite out. It feels like ${body.current.feelslike} out`;
+            const message = `${body.current.weather_descriptions[0]} It is currently ${body.current.temperature} fernite out. It feels like ${body.current.feelslike} out. The pressure is at ${body.current.pressure}`;
             callback(undefined, message);
         }
     });
